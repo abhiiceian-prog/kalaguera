@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Your Name | Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        :root {
+            --primary: #2563eb;
+            --dark: #0f172a;
+            --light: #f8fafc;
+            --gray: #64748b;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        }
+
+        body {
+            background: var(--light);
+            color: var(--dark);
+            line-height: 1.6;
+        }
+
+        header {
+            background: white;
+            padding: 2rem 1rem;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+
+        header img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 1rem;
+            border: 4px solid var(--primary);
+        }
+
+        header h1 {
+            font-size: 2rem;
+        }
+
+        header p {
+            color: var(--gray);
+            margin-top: 0.5rem;
+        }
+
+        nav {
+            margin-top: 1rem;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--primary);
+            margin: 0 0.8rem;
+            font-weight: 500;
+        }
+
+        section {
+            max-width: 1000px;
+            margin: 3rem auto;
+            padding: 0 1.5rem;
+        }
+
+        section h2 {
+            font-size: 1.6rem;
+            margin-bottom: 1.5rem;
+            border-left: 5px solid var(--primary);
+            padding-left: 0.8rem;
+        }
+
+        .card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+            margin-bottom: 1.5rem;
+        }
+
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.8rem;
+        }
+
+        .skill {
+            background: var(--primary);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+        }
+
+        .project-links a {
+            display: inline-block;
+            margin-right: 1rem;
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem 1rem;
+            background: white;
+            margin-top: 3rem;
+            font-size: 0.9rem;
+            color: var(--gray);
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 1.6rem;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 0.5rem 0.4rem;
+            }
+
+            section {
+                margin: 2rem auto;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="https://via.placeholder.com/120" alt="Profile Photo Placeholder">
+    <h1>Your Full Name</h1>
+    <p>Your Professional Title | Location</p>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section id="about">
+    <h2>About</h2>
+    <div class="card">
+        <p>
+            Write a short professional summary here. Highlight your experience,
+            key strengths, and career focus in 3–4 concise sentences.
+        </p>
+    </div>
+</section>
+
+<section id="skills">
+    <h2>Skills</h2>
+    <div class="card">
+        <div class="skills-list">
+            <span class="skill">Skill 1</span>
+            <span class="skill">Skill 2</span>
+            <span class="skill">Skill 3</span>
+            <span class="skill">Skill 4</span>
+            <span class="skill">Skill 5</span>
+        </div>
+    </div>
+</section>
+
+<section id="experience">
+    <h2>Experience</h2>
+    <div class="card">
+        <h3>Job Title – Company Name</h3>
+        <p><em>Start Date – End Date</em></p>
+        <ul>
+            <li>Key responsibility or achievement.</li>
+            <li>Quantifiable impact or accomplishment.</li>
+            <li>Important project or contribution.</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h3>Previous Job Title – Company Name</h3>
+        <p><em>Start Date – End Date</em></p>
+        <ul>
+            <li>Key responsibility or achievement.</li>
+            <li>Quantifiable impact or accomplishment.</li>
+            <li>Important project or contribution.</li>
+        </ul>
+    </div>
+</section>
+
+<section id="projects">
+    <h2>Projects</h2>
+    <div class="card">
+        <h3>Project Name</h3>
+        <p>Short description of the project, technologies used, and your role.</p>
+        <div class="project-links">
+            <a href="#" target="_blank">Live Demo</a>
+            <a href="#" target="_blank">GitHub</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <h3>Another Project</h3>
+        <p>Short description of the project, technologies used, and your role.</p>
+        <div class="project-links">
+            <a href="#" target="_blank">Live Demo</a>
+            <a href="#" target="_blank">GitHub</a>
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact</h2>
+    <div class="card">
+        <p>Email: your.email@example.com</p>
+        <p>Phone: +91-XXXXXXXXXX</p>
+        <p>
+            LinkedIn: <a href="#" target="_blank">linkedin.com/in/yourprofile</a><br>
+            GitHub: <a href="#" target="_blank">github.com/yourusername</a>
+        </p>
+    </div>
+</section>
+
+<footer>
+    © 2026 Your Full Name. All rights reserved.
+</footer>
+
+</body>
+</html>
